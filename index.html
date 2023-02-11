@@ -1,0 +1,67 @@
+//The file used to create the front- end UI for our "Student Enrollment Form"
+//HTML code for the same
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<center></center></c><h2>Student Enrollment form</h2></center>
+<form id="studentForm" method="get">
+<div class="form-group">
+<span><label for="id">Student RollNo:</label> <label id="idMsg">
+</label></span>
+<input type="text" class="form-control" name="id" id="id"
+placeholder="Enter Student Roll No" required>
+</div>
+<div class="form-group">
+<label for="name">Student Name:</label>
+<input type="text" class="form-control" id="name"
+placeholder="Enter Full Name" name="name">
+</div>
+<div class="form-group">
+<label for="email">Enrollment date: </label>
+<input type="date" class="form-control" id="enrollment_date"
+placeholder="Enter Enrollment date" name="Enrollment_date">
+</div>
+  <div class="form-group">
+<label for="Class">Class: </label>
+<input type="text" class="form-control" id="class"
+placeholder="Enter your class" name="Class">
+</div>
+  <div class="form-group">
+<label for="BirthDate">Enter your Birth date: </label>
+<input type="date" class="form-control" id="birthDate"
+placeholder="Enter DOB" name="BirthDate">
+</div>
+  <div class="form-group">
+<label for="address">Home Address: </label>
+<input type="text" class="form-control" id="address"
+placeholder="Enter your address" name="Address">
+</div>
+<div class= "form-group text-center">
+   <button type= "button" class= "btn btn-lg btn-primary" id= "save" onclick= "saveData()" disabled>Save </button>
+  <button type= "button" class= "btn btn-lg btn-primary" id= "update" onclick= "changeData()" disabled>Update </button>
+  <button type= "button" class= "btn btn-lg btn-primary" id= "reset" onclick= "resetForm()" disabled>Reset </button>
+</div>
+</form>
+</div>
+<script type= 'text/javascript' src= 'js/index.js'></script>
+</body>
+</html>
